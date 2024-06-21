@@ -108,29 +108,53 @@ section h2 {
 
 #home {
     text-align: center;
-    background: url('background.jpg') no-repeat center center/cover;
-    color: #fff;
-    height: 100vh;
+    background-color: #e0f7fa;
+    color: #333;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.home-content {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
-    position: relative;
 }
 
-#home .overlay {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 2rem;
-    border-radius: 8px;
+.text-content {
+    flex: 1;
+    min-width: 300px;
+    margin: 1rem;
 }
 
-#home h1 {
+.text-content h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
-#home p {
+.text-content p {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
+}
+
+.image-content {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-content img {
+    width: 45%;
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-content img:hover {
+    transform: scale(1.05);
 }
 
 .btn {
@@ -237,5 +261,14 @@ footer {
 
     nav ul li {
         margin: 1.5rem 0;
+    }
+
+    .home-content {
+        flex-direction: column;
+    }
+
+    .image-content img {
+        width: 80%;
+        margin: 0.5rem 0;
     }
 }
