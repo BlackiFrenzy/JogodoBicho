@@ -231,6 +231,10 @@ footer {
         transform: translateX(100%);
     }
 
+    nav ul.nav-active {
+        transform: translateX(0);
+    }
+
     nav ul li {
         margin: 1.5rem 0;
     }
